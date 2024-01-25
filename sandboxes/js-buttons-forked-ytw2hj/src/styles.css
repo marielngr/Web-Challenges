@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* flex definitions */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* other definitions */
+  margin: 0;
+  padding: 1rem;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  background-color: #1e90ff;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+}
+
+.blog-post {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 300px;
+  height: 300px;
+}
+
+.blog-post.important {
+  background-color: #ffd800;
+}
+
+.blog-post.important h2 {
+  color: red;
+}

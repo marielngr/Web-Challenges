@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* flex definitions */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* other definitions */
+  margin: 0;
+  padding: 1rem;
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  background-color: #1e90ff;
+}
+
+main {
+  /* this tells "hey body, I want to be the biggest of your children!" */
+  flex: 1;
+  padding: 1rem;
+}
+
+/* to make the body layout clearer */
+body > * {
+  border: 2px solid red;
+}
+
+.box-list {
+  /* flex definitions - horizontal (row) by default */
+  display: flex;
+  gap: 1rem;
+  /* other definitions */
+  padding: 1rem;
+  margin: 0;
+  list-style: none;
+  border: 2px solid green;
+}
+
+.box {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box.big {
+  /* takes all the available space, since the parent (.box-list) is flex */
+  flex: 1;
+  background-color: orange;
+}

@@ -1,0 +1,5 @@
+@import "./globals.css";
+
+@import "./components/Header/Header.css";
+@import "./components/Card/Card.css";
+@import "./components/Button/Button.css";

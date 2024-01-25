@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+section {
+  color: pink;
+  border: 5px solid green;
+}
+
+section div {
+  border: 5px solid red;
+  margin: 10px;
+}
+
+section div:first-child {
+  border: 5px solid blue;
+}
